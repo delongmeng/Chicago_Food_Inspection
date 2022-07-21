@@ -1,0 +1,4751 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Facility Type",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "Facility Type Cleaned",
+    "columnInsertIndex": 5,
+    "description": "Create column Facility Type Cleaned at index 5 based on column Facility Type using expression grel:value"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Children's Services Facility",
+          "1023 CHILDERN'S SERVICES FACILITY",
+          "1023-CHILDREN'S SERVICES FACILITY",
+          "CHILDRENS SERVICES FACILITY",
+          "1023 CHILDERN'S SERVICE FACILITY",
+          "1023 CHILDERN'S SERVICE S FACILITY",
+          "CHILDERN'S SERVICES  FACILITY",
+          "CHILDERN'S SERVICE FACILITY",
+          "1023 CHILDREN'S SERVICES FACILITY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Children's Services Facility"
+      },
+      {
+        "from": [
+          "Mobile Frozen Desserts Vendor",
+          "MOBILE FROZEN DESSERTS VENDOR",
+          "MOBILE FROZEN DESSERTS DISPENSER-NON-MOTORIZED",
+          "MOBILE FROZEN DESSERT VENDOR",
+          "Mobile Frozen Dessert Dispenser_non  Motorized.",
+          "Mobile Frozen Dessert Disp/Non-motorized",
+          "MOBILE FROZEN DESSERTS DISPENSER-NON- MOTORIZED",
+          "MOBILE FROZEN DESSERTS DISPENSER-NON-MOTOR",
+          "Mobile frozen dessert vendor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mobile Frozen Desserts Vendor"
+      },
+      {
+        "from": [
+          "Long Term Care",
+          "Long Term Care Facility",
+          "LONG TERM CARE",
+          "Long-Term Care",
+          "Long-Term Care Facility",
+          "LONG TERM CARE FACILITY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Long Term Care"
+      },
+      {
+        "from": [
+          "GROCERY/RESTAURANT",
+          "Grocery & Restaurant",
+          "GROCERY& RESTAURANT",
+          "grocery & restaurant",
+          "GROCERY/ RESTAURANT",
+          "GROCERY & RESTAURANT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Grocery & Restaurant"
+      },
+      {
+        "from": [
+          "DAYCARE",
+          "DAY CARE",
+          "DAYCARE 1023",
+          "DAY CARE 2-14",
+          "DAY CARE 1023",
+          "DAYCARE 1586"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daycare"
+      },
+      {
+        "from": [
+          "CONVENIENCE STORE",
+          "convenience store",
+          "CONVNIENCE STORE",
+          "(convenience store)",
+          "Convenience Store"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Convenience Store"
+      },
+      {
+        "from": [
+          "TAVERN",
+          "tavern",
+          "Tavern",
+          "TAVERN/1006"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tavern"
+      },
+      {
+        "from": [
+          "GAS STATION",
+          "gas station",
+          "(gas station)",
+          "Gas station"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gas station"
+      },
+      {
+        "from": [
+          "coffee shop",
+          "COFFEE SHOP",
+          "Coffee shop",
+          "COFFEE  SHOP"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Coffee shop"
+      },
+      {
+        "from": [
+          "GAS STATION /GROCERY",
+          "GAS STATION/ GROCERY STORE",
+          "GAS STATION/GROCERY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gas station/Grocery"
+      },
+      {
+        "from": [
+          "BAKERY/ RESTAURANT",
+          "bakery/restaurant",
+          "BAKERY/RESTAURANT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bakery/restaurant"
+      },
+      {
+        "from": [
+          "GROCERY STORE/GAS STATION",
+          "GROCERY STORE/COOKING SCHOOL",
+          "GROCERY STORE / GAS STATION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GROCERY STORE/GAS STATION"
+      },
+      {
+        "from": [
+          "Shared Kitchen User (Long Term)",
+          "Shared Kitchen User (Short Term)",
+          "SHARED KITCHEN USER (LONG TREM)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Shared Kitchen User "
+      },
+      {
+        "from": [
+          "THEATER",
+          "THEATRE",
+          "theater"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Theater"
+      },
+      {
+        "from": [
+          "FROZEN DESSERT PUSHCARTS",
+          "FROZEN DESSERTS DISPENSER -NON MOTORIZED",
+          "FROZEN DESSERTS DISPENSER-NON-MOTORIZED"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FROZEN DESSERT PUSHCARTS"
+      },
+      {
+        "from": [
+          "ASSISTED LIVING",
+          "Assisted Living",
+          "ASSISSTED LIVING"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Assisted Living"
+      },
+      {
+        "from": [
+          "Daycare Combo 1586",
+          "DAYCARE COMBO",
+          "Day Care Combo (1586)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daycare "
+      },
+      {
+        "from": [
+          "GAS STATION/STORE",
+          "GAS STATION/STORE GROCERY",
+          "GAS STATION STORE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GAS STATION/STORE"
+      },
+      {
+        "from": [
+          "CAFETERIA",
+          "Cafeteria",
+          "cafeteria"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cafeteria"
+      },
+      {
+        "from": [
+          "dollar store",
+          "DOLLAR STORE",
+          "Dollar store"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dollar store"
+      },
+      {
+        "from": [
+          "COMMISSARY",
+          "Commissary",
+          "COMMIASARY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Commissary"
+      },
+      {
+        "from": [
+          "RESTAURANT/BAR",
+          "Restaurant(protein shake bar)",
+          "RESTAURANT/BAR/THEATER"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Restaurant/bar"
+      },
+      {
+        "from": [
+          "BANQUET HALL",
+          "Banquet Hall",
+          "banquet hall"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Banquet Hall"
+      },
+      {
+        "from": [
+          "BAR",
+          "bar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "bar"
+      },
+      {
+        "from": [
+          "ROOF TOPS",
+          "ROOFTOPS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ROOF TOPS"
+      },
+      {
+        "from": [
+          "CANDY/GELATO",
+          "candy/gelato"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "candy/gelato"
+      },
+      {
+        "from": [
+          "Restaurant",
+          "restaurant"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Restaurant"
+      },
+      {
+        "from": [
+          "GROCERY",
+          "grocery"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "grocery"
+      },
+      {
+        "from": [
+          "MOVIE THEATER",
+          "MOVIE THEATRE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MOVIE THEATER"
+      },
+      {
+        "from": [
+          "LIVE POULTRY",
+          "Live Poultry"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Live Poultry"
+      },
+      {
+        "from": [
+          "TAVERN-LIQUOR",
+          "TAVERN/LIQUOR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TAVERN/LIQUOR"
+      },
+      {
+        "from": [
+          "GROCERY STORE/ RESTAURANT",
+          "GROCERY STORE/RESTAURANT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GROCERY STORE/RESTAURANT"
+      },
+      {
+        "from": [
+          "RESTAURANT/GROCERY STORE",
+          "RESTAURANT/GROCERY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RESTAURANT/GROCERY STORE"
+      },
+      {
+        "from": [
+          "GROCERY STORE/TAQUERIA",
+          "GROCERY STORE/DELI"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GROCERY STORE/DELI"
+      },
+      {
+        "from": [
+          "CHURCH/SPECIAL EVENTS",
+          "CHURCH/SPECIAL EVENT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CHURCH/SPECIAL EVENTS"
+      },
+      {
+        "from": [
+          "CONVENIENCE",
+          "convenience"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "convenience"
+      },
+      {
+        "from": [
+          "tavern/restaurant",
+          "TAVERN/RESTAURANT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tavern/restaurant"
+      },
+      {
+        "from": [
+          "HERBALIFE",
+          "Herabalife"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "HERBALIFE"
+      },
+      {
+        "from": [
+          "AFTER SCHOOL PROGRAM",
+          "after school program"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "after school program"
+      },
+      {
+        "from": [
+          "CHURCH",
+          "Church"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Church"
+      },
+      {
+        "from": [
+          "KIDS CAFE",
+          "Kids Cafe'"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kids Cafe"
+      },
+      {
+        "from": [
+          "WAREHOUSE",
+          "warehouse"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "warehouse"
+      },
+      {
+        "from": [
+          "FOOD PANTRY",
+          "Food Pantry"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Food Pantry"
+      },
+      {
+        "from": [
+          "School",
+          "SCHOOL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "School"
+      },
+      {
+        "from": [
+          "weight loss program",
+          "WEIGHT LOSS PROGRAM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "weight loss program"
+      },
+      {
+        "from": [
+          "Daycare (2 - 6 Years)",
+          "Daycare (2 Years)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daycare"
+      },
+      {
+        "from": [
+          "NURSING HOME",
+          "1005 NURSING HOME"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nursing Home"
+      },
+      {
+        "from": [
+          "Mobile Prepared Food Vendor",
+          "MOBILPREPARED FOOD VENDOR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mobile Prepared Food Vendor"
+      },
+      {
+        "from": [
+          "PRIVATE SCHOOL",
+          "Private School"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Private School"
+      },
+      {
+        "from": [
+          "newsstand",
+          "NEWSSTAND"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "newsstand"
+      },
+      {
+        "from": [
+          "coffee",
+          "CAFE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cafe"
+      },
+      {
+        "from": [
+          "FITNESS CENTER",
+          "fitness center"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "fitness center"
+      },
+      {
+        "from": [
+          "cooking school",
+          "COOKING SCHOOL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "cooking school"
+      },
+      {
+        "from": [
+          "Wrigley Roof Top",
+          "WRIGLEY ROOFTOP"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wrigley Roof Top"
+      },
+      {
+        "from": [
+          "ROOFTOP",
+          "ROOF TOP"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ROOF TOP"
+      },
+      {
+        "from": [
+          "SOCIAL CLUB",
+          "Social Club"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Social Club"
+      },
+      {
+        "from": [
+          "BANQUET",
+          "Banquet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Banquet"
+      },
+      {
+        "from": [
+          "unlicensed facility",
+          "UNLICENSED FACILITY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "unlicensed facility"
+      },
+      {
+        "from": [
+          "CHARTER SCHOOL CAFETERIA",
+          "CHARTER SCHOOL/CAFETERIA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CHARTER SCHOOL CAFETERIA"
+      },
+      {
+        "from": [
+          "Ice cream",
+          "ICE CREAM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ice cream"
+      },
+      {
+        "from": [
+          "CHURCH KITCHEN",
+          "Church Kitchen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Church Kitchen"
+      },
+      {
+        "from": [
+          "MOBILE FOOD",
+          "MOBIL FOOD 1315"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MOBILE FOOD"
+      },
+      {
+        "from": [
+          "NIGHT CLUB",
+          "night club"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "night club"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Daycare",
+          "Daycare "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daycare"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "HERBALIFE",
+          "HERBAL LIFE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Herbal life"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Restaurant",
+          "Restaurant/bar",
+          "RESTAURANT/GROCERY STORE",
+          "RESTAURANT/GAS STATION",
+          "RESTAURANT/HOSPITAL",
+          "RESTUARANT AND BAR",
+          "RESTAURANT.BANQUET HALLS",
+          "RESTAURANT/BAKERY",
+          "RESTAURANT/LIQUOR",
+          "RESTAURANT AND LIQUOR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Restaurant"
+      },
+      {
+        "from": [
+          "Gas station",
+          "GAS STATION/MINI MART",
+          "GAS STATION/STORE",
+          "GAS STATION/RESTAURANT",
+          "Gas station/Grocery",
+          "GAS STATION /SUBWAY MINI MART."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gas station"
+      },
+      {
+        "from": [
+          "Convenience Store",
+          "convenience",
+          "convenience/drug store",
+          "CONVENIENT STORE",
+          "CONVENIENCE/GAS STATION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Convenience Store"
+      },
+      {
+        "from": [
+          "MOBILE DESSERTS VENDOR",
+          "MOBILE DESSERT CART",
+          "MOBILE DESSERT VENDOR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mobile Desserts Vendor"
+      },
+      {
+        "from": [
+          "SUMMER FEEDING",
+          "SUMMER FEEDING PREP AREA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SUMMER FEEDING"
+      },
+      {
+        "from": [
+          "RETAIL STORE OFFERS COOKING CLASSES",
+          "RETAIL STORE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Retail Store"
+      },
+      {
+        "from": [
+          "DISTRIBUTION CENTER",
+          "DISTRIBUTOR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DISTRIBUTION CENTER"
+      },
+      {
+        "from": [
+          "FOOD PANTRY/CHURCH",
+          "Food Pantry"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Food Pantry"
+      },
+      {
+        "from": [
+          "Mobile Food Dispenser",
+          "MOBILE FOOD DESSERTS VENDOR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mobile Food Dispenser"
+      },
+      {
+        "from": [
+          "Cafe",
+          "SPA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cafe"
+      },
+      {
+        "from": [
+          "RIVERWALK",
+          "RIVERWALK CAFE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RIVERWALK"
+      },
+      {
+        "from": [
+          "DRUG STORE/GROCERY",
+          "DRUG STORE/W/ FOOD"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DRUG STORE/GROCERY"
+      },
+      {
+        "from": [
+          "GROCERY/LIQUOR",
+          "GROCERY/LIQUOR STORE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GROCERY/LIQUOR"
+      },
+      {
+        "from": [
+          "ART GALLERY W/WINE AND BEER",
+          "ART GALLERY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ART GALLERY W/WINE AND BEER"
+      },
+      {
+        "from": [
+          "Banquet rooms",
+          "BANQUET ROOM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Banquet rooms"
+      },
+      {
+        "from": [
+          "HERBAL LIFE SHOP",
+          "HERBALIFE/ZUMBA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "HERBAL LIFE"
+      },
+      {
+        "from": [
+          "HEALTH CENTER",
+          "HEALTH CENTER/NUTRITION CLASSES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "HEALTH CENTER"
+      },
+      {
+        "from": [
+          "Shared Kitchen User ",
+          "Shared Kitchen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Shared Kitchen User "
+      },
+      {
+        "from": [
+          "Children's Services Facility",
+          "CHILDERN ACTIVITY FACILITY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Children's Services Facility"
+      },
+      {
+        "from": [
+          "Daycare (Under 2 Years)",
+          "DAYCARE 2-6, UNDER 6"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daycare"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Herbal life",
+          "HERBAL LIFE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Herbal life"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Banquet",
+          "banquets"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Banquet"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Grocery Store",
+          "GROCERY STORE/GAS STATION",
+          "GROCERY STORE/DELI",
+          "GROCERY STORE/RESTAURANT",
+          "GROCERY STORE/BAKERY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Grocery Store"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "1023"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Children's Services Facility"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "1584-DAY CARE ABOVE 2 YEARS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daycare"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Facility Type Cleaned",
+          "expression": "value",
+          "columnName": "Facility Type Cleaned",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Bakery",
+                "l": "Bakery"
+              }
+            },
+            {
+              "v": {
+                "v": "Bakery/restaurant",
+                "l": "Bakery/restaurant"
+              }
+            },
+            {
+              "v": {
+                "v": "BAKERY/GROCERY",
+                "l": "BAKERY/GROCERY"
+              }
+            },
+            {
+              "v": {
+                "v": "BAKERY/DELI",
+                "l": "BAKERY/DELI"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Facility Type Cleaned using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Facility Type Cleaned using expression value.toLowercase()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "children's services facility",
+          "children's services facility"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "children's services facility"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "drug store/grocery",
+          "grocery/drug store",
+          "drug/grocery store"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "drug store/grocery"
+      },
+      {
+        "from": [
+          "grocery/bakery",
+          "bakery/grocery"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "bakery/grocery"
+      },
+      {
+        "from": [
+          "nutrition/herbalife",
+          "herbalife nutrition"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "herbalife nutrition"
+      },
+      {
+        "from": [
+          "grocery store",
+          "rest/grocery"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "grocery"
+      },
+      {
+        "from": [
+          "grocery/dollar store",
+          "dollar & grocery store"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "dollar store"
+      },
+      {
+        "from": [
+          "push carts",
+          "pushcart"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "push carts"
+      },
+      {
+        "from": [
+          "non -profit",
+          "not for profit"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "non-profit"
+      },
+      {
+        "from": [
+          "charter school cafeteria",
+          "school cafeteria"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "school cafeteria"
+      },
+      {
+        "from": [
+          "restaurant",
+          "tent rstaurant"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "restaurant"
+      },
+      {
+        "from": [
+          "cafe/store",
+          "coffee roaster"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "cafe"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "dollar store",
+          "dollar store"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "dollar store"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "a-not-for-profit chef training program"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "not-profit"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "after school care"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "after school program"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "candy shop"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "candy store"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "candy"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "candy store"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "catering and wholesale"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "catering"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "catering/cafe"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "catering/cafe"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "daycare (0-6 years old)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "daycare"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "daycare 2 yrs to 12 yrs"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "daycare"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "daycare 6 wks-5yrs"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "daycare"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "daycare above and under 2 years"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "daycare"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "dollar store selling grocery"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "dollar store"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "drug/food store"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "drug store"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "drug store/grocery"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "drug store"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "gift/card shop with candy"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "gift shop "
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "gift shop "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "gift shop"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "golf course conncession stand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "golf course"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "banquet dining"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "banquet"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "banquet facility"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "banquet"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "banquet hall"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "banquet"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "banquet rooms"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "banquet"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "banquet/kitchen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "banquet"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "banquets/room service"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "banquets"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "before and after school program"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "after school program"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "grocery & restaurant"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "grocery/restaurant"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "grocery/taqueria"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "grocery"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "herbal medicine"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "herbal"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "herbal drinks"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "herbal"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "herbal life"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "herbal"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "herbal remedy"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "herbal"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "herbal store"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "herbal"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "herbalcal"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "herbal"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "herbalife nutrition"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "herbal"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "hot dog cart"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hot dog station"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ice cream parlor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ice cream shop"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ice cream"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ice cream shop"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "liquore store/bar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "liquor store"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "liquor store"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "liquor"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "liquor consumption on premises."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "liquor"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "liqour brewery tasting"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "liquor"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "mfd truck"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "mobile food truck"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "mobile food truck"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "mobile food preparer"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "mobile food"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "mobile food preparer"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "mobile food dispenser"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "mobile food preparer"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "mobile food preparer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "mobile food preparer"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "mobile prepared food vendor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "mobile food preparer"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "non-for profit basement kit"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "non-profit"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "prepackage meal distributor (1006 retail)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "prepackage food"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "prep inside school"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "school"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "wholesale & retail"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "wholesale"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "wholesale bakery"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "wholesale"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "after school program"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "after school program"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "after school program"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "after school program"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "after school program"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "after school program"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "after school program"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "after school program"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "alternative school"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "school"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "art gallery w/wine and beer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "art gallery"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "banquets"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "banquet"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "bar/grill"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "bar"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "bowling lanes/banquets"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "bowling lanes/banquets"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "brewpub"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "brewery"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "candy maker"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "candy store"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "candy/gelato"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "candy store"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "cat/liquor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "liquor"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "catered events"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "catering"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "catering/cafe"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "catering"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "chinese herbs"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "herbal"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "coffee kiosk"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "coffee shop"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "coffee shop"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "coffee shop"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "coffee/tea"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "coffee shop"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "coffee cart"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "coffee shop"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "deli/grocery store"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deli"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "juice and salad bar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "juice bar"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ice cream shop"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ice cream shop"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "health/ juice bar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "juice bar"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "grocery(sushi prep)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "grocery/sushi"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "grocery and butcher"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "butcher"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "butcher"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "grocery and butcher"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "butcher shop"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "grocery and butcher"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "theater & restaurant"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theater/restaurant"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "tap room/tavern/liquor store"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tavern/liquor"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "tavern/bar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tavern/liquor"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "tavern/liquor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tavern"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "tavern/restaurant"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tavern"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "tea brewing"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tea store"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "bakery/deli"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "bakery"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "bakery/grocery"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "bakery/grocery"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "retail food/gas station"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "gas station"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "retail"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "retail store"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "roof tops"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "roof top"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "roof top"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "roof top"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "roof top"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "roof top"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "rooftop patio"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "roof top"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "roof top"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "rooftop"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "rooftop/restaurant"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "rooftop"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "wrigley roof top"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "rooftop"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "wine tasting bar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "wine store"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "service gas station"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "gas station"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "service bar/theatre"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "bar/theatre"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "school cafeteria"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "school"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "charter school"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "school"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "lounge/banquet hall"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "banquet"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "mobile frozen desserts vendor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "mobile desserts vendor"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "movie theater"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theater"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "not-profit"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "non-profit"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "np-kiosk"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "kiosk"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "o'hare kiosk"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "kiosk"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "paleteria /icecream shop"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "paleteria"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "pharmacy/grocery"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pharmacy"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "pre packaged"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "prepackaged foods"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "prepackage food"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "prepackaged foods"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "prepacakaged foods"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "prepackaged foods"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "private school"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "school"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "produce stand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "produce vendor"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "public shcool"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "school"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "reataurant/bar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "reataurant"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "reataurant"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "restaurant"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "rest/gym"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "gym"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "rest/rooftop"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "rooftop"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "slaughter house/ grocery"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "grocery"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "bakery/grocery"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "bakery"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "bakery/restaurant"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "bakery"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "bar/theatre"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theater"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "coffee shop"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "cafe"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "daycare night"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "daycare"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "food vending machines"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "vending machines"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "gas station"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "gas station"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "gas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "gas station"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "grocery and butcher"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "grocery/butcher"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "gym store"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "gym"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "hooka bar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hooka lounge"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "repackaging plant"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "prepackaged foods"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "supportive living facility"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "assisted living"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "supporting living"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "assisted living"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "teaching school"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "school"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "theater/bar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theater"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "theater/restaurant"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theater"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "university cafeteria"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "cafeteria"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "vending machines"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "vending machine"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "assisted living"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "assisted living"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facility Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "assisted living"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "assisted living"
+      }
+    ],
+    "description": "Mass edit cells in column Facility Type Cleaned"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Inspection Type",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "Inspection Type Cleaned",
+    "columnInsertIndex": 13,
+    "description": "Create column Inspection Type Cleaned at index 13 based on column Inspection Type using expression grel:value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Inspection Type Cleaned using expression value.toLowercase()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "kids cafe",
+          "kids cafe'"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "kids cafe"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "out of business",
+          "out ofbusiness"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "out of business"
+      },
+      {
+        "from": [
+          "task force",
+          "taskforce"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "task force"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "task force liquor 1475",
+          "task force liquor 1470",
+          "task force liquor 1474",
+          "task force liquor (1481)",
+          "task force liquor catering",
+          "task force liquor inspection 1474",
+          "task force(1470) liquor tavern"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "task force"
+      },
+      {
+        "from": [
+          "license-task force",
+          "license task force / not -for-profit clu",
+          "license task force / not -for-profit club"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "task force"
+      },
+      {
+        "from": [
+          "reinspection of 48 hour notice",
+          "re-inspection of close-up"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "reinspection"
+      },
+      {
+        "from": [
+          "task force package goods 1474",
+          "task force package liquor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "task force"
+      },
+      {
+        "from": [
+          "canvass re-inspection",
+          "canvass re inspection of close up"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "canvass"
+      },
+      {
+        "from": [
+          "license consultation",
+          "license canceled by owner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "license consultation"
+      },
+      {
+        "from": [
+          "canvass special events",
+          "canvass/special event"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "canvass"
+      },
+      {
+        "from": [
+          "canvass",
+          "canvas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "canvass"
+      },
+      {
+        "from": [
+          "task force night",
+          "task force not ready"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "task force"
+      },
+      {
+        "from": [
+          "license re-inspection",
+          "1315 license reinspection"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "license reinspection"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "fire complaint",
+          "fire/complain"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "fire complaint"
+      },
+      {
+        "from": [
+          "task force",
+          "task force for liquor 1474"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "task force"
+      },
+      {
+        "from": [
+          "short form complaint",
+          "short form fire-complaint"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "short form complaint"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "canvass for rib fest"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "canvass"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "canvass school/special event"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "canvass"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "citf"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "task force"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "close-up/complaint reinspection"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "complaint reinspection"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "complaint reinspection"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "complaint re-inspection"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "finish complaint inspection from 5-18-10"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "complaint"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "fire complaint"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "fire"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "license daycare 1586"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "license daycare"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "license renewal inspection for daycare"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "license renewal for daycare"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "license reinspection"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "license re-inspection"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "license task 1474"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "task force"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "liqour task force not ready"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "task force not ready"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "out of business"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "out of business"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "o.b."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "out of business"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "package liquor 1474"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "task force"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "reinspection"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "re-inspection"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "sfp recently inspected"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "sfp"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "sfp/complaint"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "sfp"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "tavern 1470"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "task force"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "suspected food poisoning"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "suspected food poisoning"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "two people ate and got sick."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "suspected food poisoning"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "pre-license consultation"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "license consultation"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "license/not ready"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "not ready"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Type Cleaned",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "task force not ready"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "not ready"
+      }
+    ],
+    "description": "Mass edit cells in column Inspection Type Cleaned"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Inspection Date",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "Inspection Date Transformed",
+    "columnInsertIndex": 12,
+    "description": "Create column Inspection Date Transformed at index 12 based on column Inspection Date using expression grel:value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Date Transformed",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Inspection Date Transformed using expression value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Inspection Date Transformed",
+    "expression": "grel:toString(toDate(value),\"yyyy-MM-dd\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Inspection Date Transformed using expression grel:toString(toDate(value),\"yyyy-MM-dd\")"
+  }
+]
